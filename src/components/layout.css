@@ -1,9 +1,29 @@
+:root {
+  /* rgb triplets */
+  --main-bg-rgb: 255, 255, 255;
+  --main-heading-rgb: 0, 90, 105;
+  --main-text-rgb: 0, 0, 0;
+
+  /* colors */
+  --main-bg: rgb(var(--main-bg-rgb));
+  --main-heading: rgb(var(--main-heading-rgb));
+  --main-color: rgb(var(--main-text-rgb));
+
+  /* sizing */
+  --spacing: 20px;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-kerning: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  transition: color 0.2s ease-out 0s, background 0.2s ease-out 0s;
+  color: var(--main-color);
+  background: var(--main-bg);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,14 +82,14 @@ dfn {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin-top: 0.67em;
 }
 mark {
   background-color: #ff0;
-  color: #000;
+  color: inherit;
 }
 small {
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 sub,
 sup {
@@ -95,10 +115,10 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 figure {
-  margin: 1em 40px;
+  margin: 1rem 40px;
 }
 hr {
   box-sizing: content-box;
@@ -112,6 +132,15 @@ select,
 textarea {
   font: inherit;
   margin: 0;
+}
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline-style: dashed;
+  outline-offset: 5px;
+  outline-width: 2px !important;
 }
 optgroup {
   font-weight: 700;
@@ -199,8 +228,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Montserrat, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -220,6 +248,10 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+h1, h2, h3, h4, h5 {
+  transition: color 0.2s ease-out 0s;
+  color: var(--main-heading);
+}
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -228,9 +260,8 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  margin-bottom: 0.25rem;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -245,10 +276,9 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-bottom: 1rem;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -262,14 +292,16 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  margin-bottom: 1rem;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 1.2rem;
   line-height: 1.1;
+}
+main h3 {
+  margin-bottom: 0;
 }
 h4 {
   margin-left: 0;
@@ -279,13 +311,13 @@ h4 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  margin-bottom: 0.3rem;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
+  font-style: italic;
   line-height: 1.1;
 }
 h5 {
@@ -297,8 +329,7 @@ h5 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -314,8 +345,8 @@ h6 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  color: var(--main-color);
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -333,16 +364,28 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
+  list-style: none;
   list-style-position: outside;
   list-style-image: none;
+}
+.dashed-list {
+  margin-bottom: 0.75rem;
+}
+.dashed-list > li::before {
+  content: '-';
+  font-weight: bold;
+  padding: 0 0.5rem 0 1rem;
+}
+.dashed-list > li {
+  margin-bottom: 0;
 }
 ol {
   margin-left: 1.45rem;
@@ -384,7 +427,13 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.35rem;
+}
+aside p {
+  font-size: 0.85rem;
+}
+aside h2 {
+  margin-bottom: 0.5rem;
 }
 figure {
   margin-left: 0;
@@ -509,7 +558,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: 0.35rem;
 }
 ol li {
   padding-left: 0;
@@ -615,8 +664,35 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+.layout-grid {
+  grid-template-columns: 275px 1fr;
+  grid-column-gap: calc(var(--spacing) * 3);
+  grid-row-gap: var(--spacing);
+}
+@media only screen and (max-width: 800px) {
+  .layout-grid {
+    /* max-width: 350px !important; */
+    padding: 0 5% !important;
+    grid-template-columns: 1fr;
+  }
+
+  .career-wrapper {
+    box-shadow: -3px 0px 5px -6px var(--main-color);
+    padding-left: calc( var(--spacing) / 2 );
+  }
+}
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 1rem;
+  }
+}
+@media print {
+  :root {
+    --main-bg-rgb: 255, 255, 255 !important;
+    --main-heading-rgb: 0, 90, 105 !important;
+    --main-text-rgb: 0, 0, 0 !important;
+  }
+  .non-printable {
+    display: none !important;
   }
 }

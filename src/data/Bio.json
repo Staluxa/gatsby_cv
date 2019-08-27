@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Profile",
+    "list": false,
+    "info": [
+      { "value": "Passionate about accessibility." },
+      { "value": "Love playing around with new tech and diving into it's source code."},
+      { "value": "Despite being shy, somehow managed to be a conference speaker. Even more than once."},
+      { "value": "Strong believer that best way to learn is practice. So I build lot's of dumb stuff."}
+    ]
+  },
+  {
+    "title": "Education",
+    "list": false,
+    "info": [
+      { "value": "Vinnytsia National Technical University"},
+      { "value": "Information security management"},
+      { "value": "Master's degree"}
+    ]
+  },
+  {
+    "title": "Recent Talks",
+    "list": true,
+    "info": [
+      {
+        "value": "Reactive programming. Svelte way."
+      },
+      {
+        "value": "Modern debugging."
+      },
+      {
+        "value": "Web Components. Next year is our year."
+      }
+    ]
+  },
+  {
+    "title": "Languages",
+    "list": true,
+    "info": [
+      {
+        "label": "ENGLISH",
+        "value": "Upper intermediate"
+      },
+      {
+        "label": "RUSSIAN, UKRAINIAN",
+        "value": "Fluent"
+      }
+    ]
+  },
+  {
+    "title": "Contact Details",
+    "list": true,
+    "info": [
+      {
+        "label": "E-mail",
+        "value": "stalushka@gmail.com"
+      },
+      {
+        "label": "Mobile",
+        "value": "+38 (093) 40-10-889"
+      },
+      {
+        "label": "Skype",
+        "value": "stalushka"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "staluxa"
+      }
+    ]
+  }
+]

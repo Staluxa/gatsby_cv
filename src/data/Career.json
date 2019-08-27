@@ -1,0 +1,59 @@
+[
+  {
+    "company": "Astound Commerce",
+    "title": "Frontend Developer",
+    "period": "Jul 2018 - Present",
+    "project": "Fluid Configure",
+    "tech": [
+      "React, Redux, Webpack, Grunt",
+      "Jest, aXe, GTM, Tealium, SCSS"
+    ],
+    "tasks": [
+      "Extending UI component library per client and core API requirements",
+      "Improving application's accessibility",
+      "Implementation of analytics",
+      "Improving internal debugging extension",
+      "Participation in lead activities"
+    ] 
+  },
+  {
+    "company": "Loomlogic",
+    "title": "Frontend Developer",
+    "period": "Feb 2018 - Jul 2018",
+    "project": "Real Estate CRM",
+    "tech": [
+      "Angular 1.6/5, TypeScript, CofeeScript, Webpack",
+      "Jasmine, Karma, SASS"
+    ],
+    "tasks": [
+      "Improving payment UI",
+      "Creating data visualization modules",
+      "Migrating older modules from AngularJS and CofeeScript to Angular 5 and TypeScript"
+    ]
+  },
+  {
+    "company": "PlasmaTec",
+    "title": "Software Engineer",
+    "period": "Jan 2016 - Feb 2018",
+    "project": "Industrial CRM",
+    "tech": [
+      "ES6, jQuery, Mustache, Web Components v0",
+      "PL/SQL"
+    ],
+    "tasks": [
+      "Creating internal UI library",
+      "Creating interactive reports"
+    ]
+  },
+  {
+    "company": "Non-commercial",
+    "title": "Personal experience",
+    "period": "",
+    "project": "Not published stuff",
+    "tech": [
+      "Vue, Svelte",
+      "GraphQL, Firebase, MongoDB",
+      "Node"
+    ]
+  }
+]
