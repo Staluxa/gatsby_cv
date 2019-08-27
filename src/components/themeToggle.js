@@ -1,7 +1,6 @@
 //TODO: DRY span soup into separate components
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useMediaQuery } from "../utils/useMediaQuery.js"
 
 function ThemeToggle() {
   const { allThemesJson } = useStaticQuery(
@@ -27,8 +26,29 @@ function ThemeToggle() {
     `
   )
 
-  const prefersDark = useMediaQuery('(prefers-color-scheme: dark)');
-  const [isDark, setIsDark] = useState(prefersDark)
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    const alias = isDark ? 'dark' : 'regular'
+    const nextTheme = allThemesJson.edges[0].node[alias]
+
+    for (let cssVar in nextTheme) {
+      document.documentElement.style.setProperty(`--main-${cssVar}-rgb`, nextTheme[cssVar])
+    }
+  }, [isDark])
+
+  const changeTheme = (e) => {
+    setIsDark(e.matches)
+  }
+
+  useEffect(() => {
+    const darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    changeTheme(darkQuery)
+    darkQuery.addListener(changeTheme)
+    return () => {
+      darkQuery.removeListener(changeTheme)
+    }
+  }, [])
   
   const craterStyles = {
     display: `inline-block`,
@@ -46,12 +66,6 @@ function ThemeToggle() {
   }
 
   function onToggle() {
-    const alias = isDark ? 'regular' : 'dark'
-    const nextTheme = allThemesJson.edges[0].node[alias]
-
-    for (let cssVar in nextTheme) {
-      document.documentElement.style.setProperty(`--main-${cssVar}-rgb`, nextTheme[cssVar])
-    }
     setIsDark(!isDark)
   }
 
