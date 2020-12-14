@@ -718,11 +718,17 @@ pre tt:after {
     --main-bg-rgb: 255, 255, 255 !important;
     --main-heading-rgb: 0, 90, 105 !important;
     --main-text-rgb: 0, 0, 0 !important;
+    --main-heading: var(--main-color);
   }
-  .non-printable {
+  .non-printable,
+  .gatsby-image-wrapper {
     display: none !important;
   }
   .layout-grid aside {
-    height: 950px;
+    height: 1000px;
+  }
+  .layout-grid header {
+    display: block !important;
+    grid-column: span 2;
   }
 }

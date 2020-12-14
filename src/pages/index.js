@@ -14,7 +14,7 @@ const IndexPage = () => (
     <header style={{
       display: `contents`
     }}>
-      <div style={{ display: `flex` }}>
+      <div className="non-printable" style={{ display: `flex` }}>
         <Photo style={{
           width: `125px`,
           borderRadius: `50%`,
