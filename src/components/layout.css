@@ -138,6 +138,7 @@ input:focus,
 textarea:focus,
 select:focus,
 a:focus {
+  outline-color: var(--main-color);
   outline-style: dashed;
   outline-offset: 5px;
   outline-width: 2px !important;
@@ -432,8 +433,15 @@ p {
 aside p {
   font-size: 0.85rem;
 }
-aside h2 {
-  margin-bottom: 0.5rem;
+aside h2,
+main h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+main h3,
+main small {
+  color: var(--main-color);
+  text-align: center;
 }
 figure {
   margin-left: 0;
@@ -669,6 +677,12 @@ pre tt:after {
   grid-column-gap: calc(var(--spacing) * 3);
   grid-row-gap: var(--spacing);
 }
+.layout-grid aside {
+  grid-row: 2 / span 3;
+}
+.layout-grid main {
+  display: contents;
+}
 @media only screen and (max-width: 800px) {
   .layout-grid {
     /* max-width: 350px !important; */
@@ -694,5 +708,8 @@ pre tt:after {
   }
   .non-printable {
     display: none !important;
+  }
+  .layout-grid aside {
+    height: 950px;
   }
 }

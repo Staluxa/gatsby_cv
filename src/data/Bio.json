@@ -5,8 +5,8 @@
     "info": [
       { "value": "Passionate about accessibility." },
       { "value": "Love playing around with new tech and diving into it's source code."},
-      { "value": "Despite being shy, somehow managed to be a conference speaker. Even more than once."},
-      { "value": "Strong believer that best way to learn is practice. So I build lot's of dumb stuff."}
+      { "value": "Despite being shy managed to end up as a conference speaker, with more than five different talks."},
+      { "value": "Strong believer that the best way to learn is to practice. So I build lots of dumb stuff."}
     ]
   },
   {
@@ -14,8 +14,7 @@
     "list": false,
     "info": [
       { "value": "Vinnytsia National Technical University"},
-      { "value": "Information security management"},
-      { "value": "Master's degree"}
+      { "value": "Information security management"}
     ]
   },
   {
@@ -23,13 +22,13 @@
     "list": true,
     "info": [
       {
+        "value": "Web through eyes of screen reader user"
+      },
+      {
+        "value": "Empathy Driven Development at Astound Commerce"
+      },
+      {
         "value": "Reactive programming. Svelte way."
-      },
-      {
-        "value": "Modern debugging."
-      },
-      {
-        "value": "Web Components. Next year is our year."
       }
     ]
   },
@@ -54,10 +53,6 @@
       {
         "label": "E-mail",
         "value": "stalushka@gmail.com"
-      },
-      {
-        "label": "Mobile",
-        "value": "+38 (093) 40-10-889"
       },
       {
         "label": "Skype",

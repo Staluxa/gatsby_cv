@@ -1,19 +1,21 @@
 [
   {
     "company": "Astound Commerce",
-    "title": "Frontend Developer",
+    "title": "Senior Frontend Developer",
     "period": "Jul 2018 - Present",
-    "project": "Fluid Configure",
+    "project": "Product Configuration Platform",
     "tech": [
-      "React, Redux, Webpack, Grunt",
-      "Jest, aXe, GTM, Tealium, SCSS"
+      "React, Redux, AWS Lambda, Serverless",
+      "Webpack, Docker, Jest, GTM"
     ],
     "tasks": [
-      "Extending UI component library per client and core API requirements",
+      "Extending internal UI component library",
       "Improving application's accessibility",
-      "Implementation of analytics",
       "Improving internal debugging extension",
-      "Participation in lead activities"
+      "Implementation of analytics",
+      "Participation in lead activities",
+      "Interviewing new candidates",
+      "Writing onboarding documentation for the role"
     ] 
   },
   {
@@ -26,9 +28,9 @@
       "Jasmine, Karma, SASS"
     ],
     "tasks": [
-      "Improving payment UI",
+      "Migrating older modules from AngularJS and CofeeScript to Angular 5 and TypeScript",
       "Creating data visualization modules",
-      "Migrating older modules from AngularJS and CofeeScript to Angular 5 and TypeScript"
+      "Improving payment UI"
     ]
   },
   {
@@ -37,23 +39,23 @@
     "period": "Jan 2016 - Feb 2018",
     "project": "Industrial CRM",
     "tech": [
-      "ES6, jQuery, Mustache, Web Components v0",
+      "ES6 Javascript, jQuery, Web Components v0",
       "PL/SQL"
     ],
     "tasks": [
+      "Creating dynamic form creation instrument based on SQL query",
       "Creating internal UI library",
       "Creating interactive reports"
     ]
   },
   {
-    "company": "Non-commercial",
-    "title": "Personal experience",
+    "company": "",
+    "title": "Non-commercial experience",
     "period": "",
-    "project": "Not published stuff",
+    "project": "Personal projects",
     "tech": [
       "Vue, Svelte",
-      "GraphQL, Firebase, MongoDB",
-      "Node"
+      "GraphQL, Firebase, MongoDB"
     ]
   }
 ]

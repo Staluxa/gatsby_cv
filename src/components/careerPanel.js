@@ -24,22 +24,28 @@ function CareerPanel() {
 
   return (
     <>
-      <h2>
-        Career History
-      </h2>
       {
         data.allCareerJson.edges.map(({node}, i) => {
           const { company, title, period, project, tech, tasks } = node;
           return (
             <section key={i} style={{
-              margin: i ? `2.5rem 0` : `1.5rem 0`,
               paddingTop: `calc(var(--spacing) / 2)`,
-              paddingLeft: `calc(var(--spacing) / 2)`
+              paddingLeft: `calc(var(--spacing) / 2)`,
+              gridColumn: `span ${i > 1 ? 2 : 1}`
             }}>
-              <h3>{title}{company && `, ${company}`}</h3>
+              {!i && 
+                <h2>
+                  Career History
+                </h2>
+              }
+              <h3>
+                {title}
+                {company && i > 1 && <>, {company}</>}
+                {company && i <= 1 && <div>{company}</div>}
+              </h3>
               <small style={{
                 fontStyle: `italic`,
-                display: `inline-block`,
+                display: `block`,
                 marginBottom: `1rem`,
                 borderRadius: `3px`,
                 padding: `0 1rem`,

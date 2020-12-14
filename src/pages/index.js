@@ -33,8 +33,14 @@ const IndexPage = () => (
         </div>
       </div>
       <div>
-        <h1>Kovtun Oleksandr</h1>
-        <p style={{ paddingLeft: `1rem` }}>Frontend Developer</p>
+        <h1 style={{ textAlign: `center`, margin: `0` }}>Kovtun Oleksandr</h1>
+        <small style={{
+          display: `block`,
+          paddingLeft: `1rem`,
+          textAlign: `center`,
+          fontStyle: `italic`,
+          fontSize: `0.8rem`
+        }}>Frontend Developer, Accessibility Advocate</small>
       </div>
     </header>
     <SidePanel />
