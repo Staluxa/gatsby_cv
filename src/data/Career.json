@@ -6,7 +6,7 @@
     "project": "Product Configuration Platform",
     "tech": [
       "React, Redux, AWS Lambda, Serverless",
-      "Webpack, Docker, Jest, GTM"
+      "Webpack, Docker, Jest, GTM, Tealium"
     ],
     "tasks": [
       "Extending internal UI component library",
@@ -43,9 +43,10 @@
       "PL/SQL"
     ],
     "tasks": [
-      "Creating dynamic form creation instrument based on SQL query",
-      "Creating internal UI library",
-      "Creating interactive reports"
+      "Communicating with employees from other departments to figure out potential UI improvements",
+      "Creating interactive reports",
+      "Creating instrument for dynamic form creation based on SQL query",
+      "Creating internal UI library"
     ]
   },
   {

@@ -51,6 +51,10 @@
     "list": true,
     "info": [
       {
+        "label": "Address",
+        "value": "Ukraine, Vinnytsia"
+      },
+      {
         "label": "E-mail",
         "value": "stalushka@gmail.com"
       },
