@@ -690,8 +690,21 @@ pre tt:after {
     grid-template-columns: 1fr;
   }
 
+  h2, h3 {
+    text-align: center;
+  }
+  .layout-grid main {
+    display: block;
+  }
+  .layout-grid aside {
+    grid-row: auto;
+  }
+
+  aside > div {
+    box-shadow: none !important;
+  }
   .career-wrapper {
-    box-shadow: -3px 0px 5px -6px var(--main-color);
+    box-shadow: none;
     padding-left: calc( var(--spacing) / 2 );
   }
 }
