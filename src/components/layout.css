@@ -378,7 +378,7 @@ ul {
   list-style-image: none;
 }
 .dashed-list {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 .dashed-list > li::before {
   content: '-';

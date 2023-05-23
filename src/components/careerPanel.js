@@ -61,7 +61,7 @@ function CareerPanel() {
               }
               {
                 tasks && <>
-                  <h4>Responsibilities:</h4>
+                  <h4>Achievements:</h4>
                   <ul className="dashed-list">
                     { tasks.map((resp, i) => <li key={i}>{resp}</li>) }
                   </ul>

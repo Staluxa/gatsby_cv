@@ -1,20 +1,22 @@
 [
   {
-    "title": "Profile",
+    "title": "Summary",
     "list": false,
     "info": [
-      { "value": "Passionate about accessibility." },
-      { "value": "Love playing around with new tech and diving into it's source code."},
-      { "value": "Despite being shy managed to end up as a conference speaker, with more than five different talks."},
-      { "value": "Strong believer that the best way to learn is to practice. So I build lots of dumb stuff."}
+      { "value": "Expert React skill." },
+      { "value": "Deep accessibility knowledge." },
+      { "value": "Experienced in improving code health and implementing long term safeguards for it." },
+      { "value": "Experienced in creating and improving existing onboarding documentation and processes." },
+      { "value": "Despite being shy managed to end up as a conference speaker, with more than five different talks." },
+      { "value": "Will stay calm no matter the pressure." }
     ]
   },
   {
     "title": "Education",
     "list": false,
     "info": [
-      { "value": "Vinnytsia National Technical University"},
-      { "value": "Information security management"}
+      { "value": "Vinnytsia National Technical University" },
+      { "value": "Information security management" }
     ]
   },
   {
@@ -22,13 +24,22 @@
     "list": true,
     "info": [
       {
+        "value": "Accessibility news digest 2022 Q2"
+      },
+      {
+        "value": "Accessibility audit 101"
+      },
+      {
+        "value": "React state management outside of Redux"
+      },
+      {
         "value": "Web through eyes of screen reader user"
       },
       {
         "value": "Empathy Driven Development at Astound Commerce"
       },
       {
-        "value": "Reactive programming. Svelte way."
+        "value": "Reactive programming. Svelte way"
       }
     ]
   },
@@ -41,7 +52,7 @@
         "value": "Upper intermediate"
       },
       {
-        "label": "RUSSIAN, UKRAINIAN",
+        "label": "UKRAINIAN, RUSSIAN",
         "value": "Fluent"
       }
     ]
@@ -51,7 +62,7 @@
     "list": true,
     "info": [
       {
-        "label": "Address",
+        "label": "Residency",
         "value": "Ukraine, Vinnytsia"
       },
       {
