@@ -720,15 +720,15 @@ pre tt:after {
     --main-text-rgb: 0, 0, 0 !important;
     --main-heading: var(--main-color);
   }
-  .non-printable,
-  .gatsby-image-wrapper {
+  .header-extras {
+    margin-left: calc( var(--spacing) / 2 );
+  }
+  .non-printable {
     display: none !important;
   }
   .layout-grid aside {
     height: 1000px;
   }
-  .layout-grid header {
-    display: block !important;
-    grid-column: span 2;
-  }
+  /* .layout-grid header {
+  } */
 }

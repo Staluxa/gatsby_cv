@@ -14,14 +14,16 @@ const IndexPage = () => (
     <header style={{
       display: `contents`
     }}>
-      <div className="non-printable" style={{ display: `flex` }}>
+      <div
+        className="header-extras"
+        style={{ display: `flex` }}>
         <Photo style={{
           width: `125px`,
           borderRadius: `50%`,
           boxShadow: `0px 0px 2px 0px var(--main-color)`,
           marginLeft: `2px`
         }}/>
-        <div className="non-printable"
+        <div
           style={{
             display: `inline-flex`,
             flexDirection: `column`,

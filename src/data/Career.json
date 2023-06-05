@@ -12,8 +12,7 @@
       "Removed dependency of multiple polymer components injected into the project by refactoring it into Angular components.",
       "Simplified over engineered parts of application by streamlining it's logic with OOP approach.",
       "Performed accessibility audit for the project and created improvement action plan based on it. Actively participated in it's development.",
-      "Actively participated in code review.",
-      "Performed onboarding sessions."
+      "Mentored newcomers."
     ]
   },
   {
@@ -40,14 +39,14 @@
     "period": "Jul 2018 - Jan 2021",
     "project": "Product Configuration Platform",
     "tech": [
-      "React, Redux, AWS Lambda, Serverless",
+      "React, Redux, AWS Lambda, Serverless, SFCC",
       "Webpack, Docker, Jest, GTM, Tealium"
     ],
     "tasks": [
+      "Worked on integration and customization for SFCC implementations",
       "Extended internal UI component library",
       "Improved internal debugging extension",
       "Improved application's accessibility",
-      "Participated in lead activities",
       "Interviewed new candidates",
       "Wrote onboarding documentation for the role"
     ]

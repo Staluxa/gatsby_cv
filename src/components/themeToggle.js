@@ -74,6 +74,7 @@ function ThemeToggle() {
       aria-label="Dark theme"
       aria-pressed={isDark}
       onClick={onToggle}
+      className="non-printable"
       style={{
         position: `relative`,
         alignSelf: `start`,

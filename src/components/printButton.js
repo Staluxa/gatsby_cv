@@ -11,6 +11,7 @@ function PrintButton() {
   return (
     <button
       onClick={onClick}
+      className="non-printable"
       style={{
         width: `100px`,
         height: `50px`,
